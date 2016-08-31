@@ -1,0 +1,74 @@
+
+2016年最值得学习的五大开源项目
+
+原文：
+http://www.jianshu.com/p/8180cc105f01
+http://gold.xitu.io/entry/57c540d70a2b58006c06b817
+
+1，Material Animations
+演示View的平移、缩放动画，activity进入和退出动画，界面间元素共享。是学习动画很好的项目，项目代码量比较少，也很适合新手学习。
+
+2，Meizhi
+每天推送一张妹子图、一个小视频和一系列程序员精选文章，数据来源于代码家的干货集中营。
+架构：     MVC
+图片加载："picasso"
+网络请求：RxJava & Retrofit＋okhttp
+界面：      遵循google材料设计
+其他：
+nineoldandroids
+photoview
+numberprogressbar
+umeng-analytics
+rxandroid
+butterknife
+otto
+项目地址github：https://github.com/drakeet/Meizhi
+
+3，LookLook
+可以阅读知乎日报，网易头条，每日推送一张妹子图片和视频，是一个精美的阅读软件。遵循了谷歌材料设计，加入了一些5.0以上的新特性，阅读体验绝不逊色于官方的app。
+架构：      MVP
+图片加载：”glide”
+网络请求：RxJava & Retrofit＋okhttp
+界面：      遵循google材料设计
+其他：
+Cardview
+RecycleView
+Butterknife
+PhotoView
+项目地址github：https://github.com/xinghongfei/LookLook
+
+
+4，android-UniversalMusicPlayer
+这个开源项目展示了如何实现一个横跨各种Android平台的音乐播放器，包括手机，平板，汽车，手表，电视等。
+架构：MVC
+项目地址github：https://github.com/googlesamples/android-UniversalMusicPlayer
+
+
+5，plaid
+由谷歌工程师开发，展示google的材料设计，项目代码量大，但是结构清晰，还是很好理解的。
+架构：    MVC
+图片加载：”glide”
+网络请求：RxJava & Retrofit
+其他：
+RecycleView
+Butterknife
+项目地址github：https://github.com/nickbutcher/plaid
+
+
+总结：
+建议学习顺序从第一个开始一直到最后一个，由易到难。项目中用到的开源库，如果不熟悉，网上搜一些文章进行学习，把开源库的基本使用都了解了之后再去看项目，这样就不会一头雾水。当下比较流行的技术有RxJava ＋ Retrofit＋okhttp，RecycleView，Butterknife，Glide等，这些技术在LookLook项目中都用应用，如果把LookLook这个项目搞懂了，基本就没有问题了。
+
+看开源项目的心得：
+刚开始看一些项目可能会感觉没有头绪，项目看多了，就不会有这种感觉了，只要静下心，一切都ok了。
+准备工作：  下载项目，编译后运行在虚拟机或真机上，读README了解项目概况。
+看项目源码：打开Manifest文件，找到入口activity，简要浏览项目中有一些什么activity，Broadcast Receiver，Service。然后在虚拟机或真机上打开程序对照源码看。顺藤摸瓜，一步一步往下看，第一遍可能不会完全看懂。第一遍就是把程序运行的主要脉络搞懂，熟悉项目中用到的开源库和知识点，如果有自己不熟悉的，上网搜一些文章学习。第一遍主要脉络搞懂了之后，再进行第二遍，第三遍，甚至第四遍，每一遍都会加深对代码的理解。
+
+如果你的项目看多了之后你会发现一个项目可以分为以下几个模块：
+1，activity 和fragment
+2，adapter
+3，数据实体
+4，第三方开源库的使用，网络、图片、其他工具
+5，一些工具类
+6，项目配置类
+7，自定义View
+8，其他（数据库，activity、fragment的基类，API等）
